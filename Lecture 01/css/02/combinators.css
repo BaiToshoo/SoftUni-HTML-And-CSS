@@ -5,3 +5,11 @@ div p {
 ul > li {
     list-style-type: circle;
 }
+
+p + p {
+    background-color: #eee;
+}
+
+p ~ span {
+    font-weight: bold;
+}
