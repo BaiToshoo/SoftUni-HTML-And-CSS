@@ -1,0 +1,15 @@
+section p {
+    color: darkolivegreen;
+}
+
+article.highlight + article p {
+    background-color: lightcoral;
+}
+
+li.special {
+    color: red
+}
+
+h2.trigger ~ p {
+    color: lightblue;
+}
