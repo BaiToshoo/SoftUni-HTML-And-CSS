@@ -1,0 +1,15 @@
+section > h2 {
+    color: #f00;
+}
+
+img {
+    border: #f00 20px solid;
+}
+
+article > p {
+    border-color: #f00;
+}
+
+header ul li:first-child a {
+    font-weight: bold;
+}
