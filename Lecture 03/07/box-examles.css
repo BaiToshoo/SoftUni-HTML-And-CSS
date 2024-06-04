@@ -1,0 +1,16 @@
+div {
+    border: 5px solid #333;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #eee;
+
+}
+
+.default {
+    box-sizing: content-box;
+}
+
+.other {
+    box-sizing: border-box;
+}
