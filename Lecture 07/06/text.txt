@@ -1,8 +1,43 @@
-Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.
-Stanley Kimball
+Complex Queries
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#creating_complex_media_queries
 
-Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.
-Friday Davison
+Combining multiple types or features
+The and keyword combines a media feature with a media type or other media features. This example combines two media features to restrict styles to landscape-oriented devices with a width of at least 30 ems:    
 
-Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.
-Friday Davison
+
+
+@media (min-width: 30em) and (orientation: landscape) {
+body::before {
+display: block;
+content: 'The viewport width is larger than 30em and the orientation is landscape.';
+}
+}              
+
+
+
+Testing for multiple queries
+You can use a comma-separated list of media queries to apply styles when the user's device matches any one of various media types, features, or states.
+
+
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+body::before {
+display: block;
+content: 'The viewport height is larger than 680px or the media type is screen and the orientation is portrait.';
+}
+}
+
+
+
+Inverting a query's meaning
+The not keyword inverts the meaning of a single media query. For example, the CSS styles in this media query will apply to everything except printed media:
+
+
+
+@media not (min-width: 600px) {
+body::before {
+display: block;
+content: 'The view port is NOT larger than 600px';
+}
+}
+

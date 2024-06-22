@@ -1,35 +1,37 @@
-Title 1
-Title 2 is fairly very long 
-Title 3 
-
-Value 1
-Value 2
-Value 3
-
-Value 1
-Value 2
-Value 3
-
-Value 1
-Value 2
-Value 3
+Media Feature - width, min-width, max-width
 
 
-Header 1
-Header 22
-Header 333
-
-Row 1, Col 1
-Row 1, Col 2
-Row 1, Col 3
-
-Row 2, Col 1
-Row 2, Col 2
-Row 2, Col 3
-
-Row 3, Col 1
-Row 3, Col 2
-Row 3, Col 3
+width
 
 
+@media (width: 800px) {
+body::before {
+display: block;
+content: 'The viewport width is exactly 800px';
+}
+}              
+
+
+
+min-width
+
+
+@media (min-width: 800px) {
+body::before {
+display: block;
+content: 'The viewport width is larger than 800px';
+}
+}              
+
+
+
+max-width
+
+
+@media (max-width: 800px) {
+body::before {
+display: block;
+content: 'The viewport width is smaller than 800px';
+}
+}              
 
